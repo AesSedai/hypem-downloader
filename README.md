@@ -1,6 +1,6 @@
 # hypem-downloader-ruby
 
-## Usage
+## Installation
 
 ```` sh
 git clone https://gist.github.com/s2t2/2a24d01976b7aab74b27
@@ -8,8 +8,19 @@ cd 2a24d01976b7aab74b27
 bundle install
 ````
 
+## Usage
+
+Download songs from the popular page.
+
+```` sh
+ruby tracks.rb
+````
+
+Gem usage (in development).
+
 ```` rb
-Hypem::TracksController.download(:from_url => "http://hypem.com/artist/Sia/1/?sortby=favorite")
+Hypem::Tracks.download(:from_url => "http://hypem.com/artist/Sia/1/?sortby=favorite")
+Hypem::Tracks.download(:from_url => "http://hypem.com/popular")
 ````
 
 ## Disclaimer
