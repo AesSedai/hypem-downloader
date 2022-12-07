@@ -1,1 +1,3 @@
-tracks
+*.csv
+out
+.idea/*
